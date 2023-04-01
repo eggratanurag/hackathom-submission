@@ -1,0 +1,81 @@
+
+body {
+    background-color: #f7f7f7;
+    font-family: 'Poppins', sans-serif;
+}
+.homeDiv {
+    width: min(1440px, 100%);
+    margin: 0 auto;
+   
+}
+.homeDiv1 {
+    background: url("./images/waves.png") no-repeat center bottom;
+}
+.btn {
+    @apply font-bold py-3 px-4 rounded-lg;
+  }
+  .btn-emerald {
+    background-color: #44924c;
+  }
+  .btn-emerald:hover {
+    background-color: #4e7953;
+  }
+
+
+input[type="radio"] {
+    display: none;
+}
+label::after {
+   content: "";
+   outline: 2px solid #4e7953;
+   margin-top: 5px;
+   display: block;
+   width: 200px;
+   background: yellow;
+   visibility: hidden;
+   
+
+}
+#search {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB30lEQVR4nO2WwU4UQRCGJyp7Ublp4iug7yCe5QBGeQWCUQFfYK6G84ak/r/qMiua9IuYGC6CiRCEO2c46AlTQ/cyF2G7l2xIoJJOJpmu/qq6qv/uqrq162IhhJ4Bi0p+MWBXgRMf/m3Apv/zOVcKJflKgQMjTy8aSv42YGFsYF3Xd4xcHy4O/DDyg5nNNE1z3weApyqyouR2J4hP7lsMtnPoH5JLFy0Wg1z2uQlevL0WoSbyPMNvNsFVdT4LGkLopZp6prlBq8jbWJp9EZka2dGAxVTTklqFEO4asBPXeD06mPzabhXwPhc6XANYjaX6nAPea53MZkrB3u0x490c8LE79fv9B6VgVX0YMz6eKHgwGEyXgPfG3WpVfZY6e3QwsNk2l8hKMRj4GBt0kH2clNwuPk7kzygib3Ice63gn9VoORdM8l3M9qCu63tZzgYsdHR6dlQ/VX2hwN9Y37ncoFtzoU9wl0Hfwuo/5v880wRV8qjZ2HhclVh9duMkuGew44rk4uBHzUfs3rVU0wRN84vhbn7L+LG47CFg5KGqvnRYR6vHg4vIlAu+a6+Sv1wY4tNn34+Md2+3ka4Unmtm9ii9TDxYEXlS3Qh409l2Jb9PDDyEk1tGfpso+NaqaP8ABun+rZ3ZR2YAAAAASUVORK5CYII=") ;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: 10px 2px;
+   
+}
+input[type="text"]:checked + label{
+   
+}
+input[type="radio"]:checked + label:after{
+    visibility: visible;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+     min-width: 260px;
+     transition: all 0.9 ease 0s;
+    
+}
+.card:hover {
+   
+   box-shadow: 5px 9px 24px rgba(132, 132, 132, 0.16);
+}
+.dates {
+ 
+    margin-top: auto;
+    align-self: end;
+}
+.cardsDiv {
+
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1.2fr;
+    grid-template-rows: 1fr ;
+    grid-gap: 20px;
+
+}
+.linkDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
